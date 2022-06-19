@@ -1,0 +1,17 @@
+
+    <div class="container">
+        <div class="containerBorder">            
+                <h2><b>LOGIN</b></h2>
+                <mat-form-field appearance="fill">
+                    <mat-label>User ID</mat-label>
+                    <input matInput [(ngModel)]="username" name="username" required>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput [(ngModel)]="password" type="password" minlength="4" name="password">
+                    <mat-error *ngIf="password && password.length<4">Password length inadequate</mat-error>
+                </mat-form-field><br>
+                <button mat-button class="buttonClass" (click)="onSubmit()">Submit</button>            
+        </div>
+    </div>
+

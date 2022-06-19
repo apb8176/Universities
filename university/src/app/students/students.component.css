@@ -1,0 +1,38 @@
+.content {    
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+}
+
+.content > mat-card {
+    padding: 10px;
+    width: 200px;
+    overflow-wrap: break-word;
+}
+.contents{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contentTitle{
+    display: contents;
+    text-align: center;
+    align-self: center;
+    padding: 0%;
+    margin: 0%;
+    font-weight: 900;
+}
+.contentImg {
+    margin: 3px;
+    padding: 1px;
+    width : 95%;
+    border : 2px solid rgb(208, 207, 207);
+}
+.plusImg{
+    width: 80%;
+    padding: 15%;
+    padding-top: 60%;
+    align-items: center;
+}

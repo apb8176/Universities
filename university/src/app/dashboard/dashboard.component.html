@@ -1,0 +1,22 @@
+<div class="content">
+  <mat-card class="mat-elevation-z4">        
+      <img class="plusImg" mat-card-image src="./../../assets/plus.png">    
+  </mat-card>
+    <mat-card class="mat-elevation-z4"  *ngFor='let country of countryData'>
+      <mat-card-header  class="contentTitle">
+        <mat-card-title>{{country.name}}</mat-card-title>
+      </mat-card-header>
+      <img class="contentImg" mat-card-image src="./../../assets/logoStud.jpg">
+      <mat-card-content class="contents">
+        <p>
+          <b>ID:</b>{{country.id}}<br>
+          <b>Email:</b>{{country.email}}<br>
+          <b>Gender:</b>{{country.gender}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>DELETE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
